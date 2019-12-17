@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/mileStone1.dir/main.cpp.o CMakeFiles/mileStone1.dir/Command.cpp.o  -o mileStone1 

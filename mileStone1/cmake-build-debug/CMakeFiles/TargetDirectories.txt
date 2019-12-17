@@ -1,3 +1,0 @@
-/home/avi/CLionProjects/mileStone1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/avi/CLionProjects/mileStone1/cmake-build-debug/CMakeFiles/mileStone1.dir
-/home/avi/CLionProjects/mileStone1/cmake-build-debug/CMakeFiles/edit_cache.dir
