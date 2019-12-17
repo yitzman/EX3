@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/user/Documents/GitHub/EX3/Command.cpp
+Command.h
+C:/Users/user/Documents/GitHub/EX3/Command.h
+
+C:/Users/user/Documents/GitHub/EX3/Command.h
+string
+-
+
+C:/Users/user/Documents/GitHub/EX3/main.cpp
+iostream
+-
+fstream
+-
+sstream
+-
+cstring
+-
+array
+-
+vector
+-
+
+C:/Users/user/Documents/GitHub/EX3/openServerCommand.cpp
+openServerCommand.h
+C:/Users/user/Documents/GitHub/EX3/openServerCommand.h
+
+C:/Users/user/Documents/GitHub/EX3/openServerCommand.h
+Command.h
+C:/Users/user/Documents/GitHub/EX3/Command.h
+
