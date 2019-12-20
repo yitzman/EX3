@@ -1,23 +1,26 @@
 #include <iostream>
 #include <fstream>
-#include <sstream>
-#include <cstring>
 #include <array>
 #include <vector>
 
+#include "Lexer.h"
+#include "Command.h"
 
 using namespace std;
-
-vector<string> lexer(ifstream *);
-
 
 int main(int argv, char *argc[]) {
     string *strArr;
     ifstream file;
     file.open(argc[1]);
-    vector<string> tokens = lexer(&file);
-    for (string token:tokens)
-        cout << token << endl;
+    vector<vector<string>> vectors = Lexer::cutFile(&file);
+    for (vector<string> tokens:vectors) {
+        int i = 1;
+        for (string token: tokens) {
+            cout << i << ")" + token << "\t";
+            i++;
+        }
+        cout << "\n";
+    }
     file.close();
     return 0;
 }
