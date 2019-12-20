@@ -22,33 +22,3 @@ int main(int argv, char *argc[]) {
     return 0;
 }
 
-vector<string> lexer(ifstream *file) {
-    string line;
-    vector<string> tokens;
-    int i = 0;
-    bool ignoreComma = false;
-    while (getline(*file, line)) {
-        string token = "";
-        for (char c:line) {
-            //token += c;
-            if (c != '(' && c != ',' && c != ' ' && c != ')') {
-                token += c;
-            } else {
-                if (c == ',' && ignoreComma) {
-                    token += c;
-                    continue;
-                }
-                tokens.push_back(token);
-                token = "";
-                i++;
-                if (c == '(') {
-                    ignoreComma = true;
-                } else if (c == ')') {
-                    ignoreComma = false;
-                }
-            }
-        }
-    }
-
-    return tokens;
-}
