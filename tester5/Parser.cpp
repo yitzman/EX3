@@ -15,18 +15,18 @@ int Parser::execute() {
         if (v[0] == "openDataServer") {
             try {
                 parserOpenServer(v);
-            } catch (const char* e) {
+            } catch (const char *e) {
                 if (m_connect_command != nullptr) {
-                    delete(m_connect_command);
+                    delete (m_connect_command);
                     std::cout << e << std::endl;
                 }
                 if (m_open_command != nullptr) {
-                    delete(m_open_command);
-                    std::cout<< e << std::endl;
+                    delete (m_open_command);
+                    std::cout << e << std::endl;
                 }
                 return -1;
             }
-            thread* t_open_command = new thread(&OpenServerCommand::readingInfoFromSim, ref(m_open_command));
+            thread *t_open_command = new thread(&OpenServerCommand::readingInfoFromSim, ref(m_open_command));
             m_thread_vector.push_back(t_open_command);
 
             continue;
@@ -36,14 +36,14 @@ int Parser::execute() {
         if (v[0] == "connectControlClient") {
             try {
                 parserConnect(v);
-            } catch (const char* e) {
+            } catch (const char *e) {
                 if (m_connect_command != nullptr) {
-                    delete(m_connect_command);
+                    delete (m_connect_command);
                     std::cout << e << std::endl;
                 }
                 if (m_open_command != nullptr) {
-                    delete(m_open_command);
-                    std::cout<< e << std::endl;
+                    delete (m_open_command);
+                    std::cout << e << std::endl;
                 }
                 return -1;
             }
@@ -57,14 +57,14 @@ int Parser::execute() {
             if (v[2] == "->") {
                 try {
                     parserDefineVarRight(v);
-                } catch (const char* e) {
+                } catch (const char *e) {
                     if (m_connect_command != nullptr) {
-                        delete(m_connect_command);
+                        delete (m_connect_command);
                         std::cout << e << std::endl;
                     }
                     if (m_open_command != nullptr) {
-                        delete(m_open_command);
-                        std::cout<< e << std::endl;
+                        delete (m_open_command);
+                        std::cout << e << std::endl;
                     }
                     return -1;
                 }
@@ -72,31 +72,31 @@ int Parser::execute() {
             } else if (v[2] == "<-") {
                 try {
                     parserDefineVarLeft(v);
-                } catch (const char* e) {
+                } catch (const char *e) {
                     if (m_connect_command != nullptr) {
-                        delete(m_connect_command);
+                        delete (m_connect_command);
                         std::cout << e << std::endl;
                     }
                     if (m_open_command != nullptr) {
-                        delete(m_open_command);
-                        std::cout<< e << std::endl;
+                        delete (m_open_command);
+                        std::cout << e << std::endl;
                     }
                     return -1;
                 }
-                thread* t_var_command = new thread(&DefineVarCommend::getInfoFromSim, m_map_var[v[1]]);
+                thread *t_var_command = new thread(&DefineVarCommend::getInfoFromSim, m_map_var[v[1]]);
                 m_thread_vector.push_back(t_var_command);
 
             } else if (v[2] == "=") {
                 try {
                     parserDefineVarEqual(v);
-                } catch (const char* e) {
+                } catch (const char *e) {
                     if (m_connect_command != nullptr) {
-                        delete(m_connect_command);
+                        delete (m_connect_command);
                         std::cout << e << std::endl;
                     }
                     if (m_open_command != nullptr) {
-                        delete(m_open_command);
-                        std::cout<< e << std::endl;
+                        delete (m_open_command);
+                        std::cout << e << std::endl;
                     }
                     return -1;
                 }
@@ -126,14 +126,14 @@ int Parser::execute() {
             if (v[0] == name) {
                 try {
                     parserSetNewVal(v);
-                } catch (const char* e) {
+                } catch (const char *e) {
                     if (m_connect_command != nullptr) {
-                        delete(m_connect_command);
+                        delete (m_connect_command);
                         std::cout << e << std::endl;
                     }
                     if (m_open_command != nullptr) {
-                        delete(m_open_command);
-                        std::cout<< e << std::endl;
+                        delete (m_open_command);
+                        std::cout << e << std::endl;
                     }
                     return -1;
                 }
@@ -151,10 +151,14 @@ int Parser::execute() {
  * @return the calculated expression.
  */
 double Parser::parserInterpert(string str) {
-    if (str == "rpm") {
-        return m_map_var["rpm"]->getValue();
+    vector<string> variables = getVariables(str);
+    Interpreter *intrptr = new Interpreter();
+    for(string s : variables) {
+        intrptr->setVariables(s + "=" + to_string(m_map_var[s]->getValue()));
     }
-    return atof(str.c_str());
+    Expression *e = intrptr->interpret(str);
+    return (e->calculate());
+    //return atof(str.c_str());
 }
 
 /*example: openDataServer(5400 + 2 - h0).
@@ -192,7 +196,7 @@ int Parser::parserConnect(vector<string> line) {
     //cutting between the ip and the port.
     vector<string> v = cuttingArgumentsInConnect(line[1]);
 
-    string server_ip  = v[0];
+    string server_ip = v[0];
     //interpets the port expression.
     double port = parserInterpert(v[1]);
 
@@ -219,7 +223,7 @@ int Parser::parserDefineVarLeft(vector<string> line) {
     string sim_path(line[4], 2, line[4].size() - 3);
     char bind = line[2][0];
 
-    DefineVarCommend* var  = new DefineVarCommend(name_var, sim_path, bind, m_open_command);
+    DefineVarCommend *var = new DefineVarCommend(name_var, sim_path, bind, m_open_command);
     var->execute();
 
     m_map_var[name_var] = var;
@@ -241,7 +245,7 @@ int Parser::parserDefineVarRight(vector<string> line) {
     string sim_path(line[4], 2, line[4].size() - 3);
     char bind = line[2][1];
 
-    DefineVarCommend* var  = new DefineVarCommend(name_var, sim_path, bind, m_connect_command);
+    DefineVarCommend *var = new DefineVarCommend(name_var, sim_path, bind, m_connect_command);
     var->execute();
 
     m_map_var[name_var] = var;
@@ -259,10 +263,10 @@ int Parser::parserDefineVarEqual(vector<string> line) {
     char bind = line[2][0];
     double val = parserInterpert(line[3]);
 
-    DefineVarCommend* var = new DefineVarCommend(name_var, bind);
+    DefineVarCommend *var = new DefineVarCommend(name_var, bind);
     var->setNewVal(val);
     if (name_var.find(' ') != string::npos) {
-        cout<<"found prob"<<endl;
+        cout << "found prob" << endl;
     }
     m_map_var[name_var] = var;
 
@@ -284,7 +288,7 @@ int Parser::parserSetNewVal(vector<string> line) {
     double val = parserInterpert(line[2]);
 
 
-    DefineVarCommend* var  = m_map_var[name_var];
+    DefineVarCommend *var = m_map_var[name_var];
     var->setNewVal(val);
 
     return 0;
@@ -295,7 +299,7 @@ int Parser::parserWhile(vector<string> line) {
 }
 
 int Parser::parserSleep(vector<string> line) {
-    int val = (int)parserInterpert(line[1]);
+    int val = (int) parserInterpert(line[1]);
     std::this_thread::sleep_for(std::chrono::milliseconds(val));
     return 0;
 }
@@ -303,10 +307,10 @@ int Parser::parserSleep(vector<string> line) {
 int Parser::parserPrint(vector<string> line) {
     if (line[1][0] == '\"') {
         string str(line[1], 1, line[1].size() - 2);
-        cout<< str <<endl;
+        cout << str << endl;
     } else {
         double val = parserInterpert(line[1]);
-        cout<< val <<endl;
+        cout << val << endl;
     }
 
     return 0;
@@ -346,4 +350,21 @@ vector<string> Parser::cuttingArgumentsInConnect(string line) {
     v.push_back(str_ip);
     v.push_back(str_port);
     return v;
+}
+//extracts and returns all variables in expression
+vector<string> Parser::getVariables(string exp) {
+    vector<string> variables;
+    string token = "";
+    for (char c: exp) {
+        if (c == ' ' || c == '+' || c == '-' || c == '/' || c == '*' || c == '(' || c == ')') {
+            if(token != "" && token !="\t")
+                variables.push_back(token);
+            token="";
+        } else {
+            token += c;
+        }
+    }
+    if(token != "" && token !="\t")
+        variables.push_back(token);
+    return variables;
 }

@@ -122,32 +122,356 @@ EX3/fast:
 	$(MAKE) -f CMakeFiles\EX3.dir\build.make CMakeFiles/EX3.dir/build
 .PHONY : EX3/fast
 
-Command.obj: Command.cpp.obj
+Interpreter/BinaryOperator.obj: Interpreter/BinaryOperator.cpp.obj
 
-.PHONY : Command.obj
+.PHONY : Interpreter/BinaryOperator.obj
 
 # target to build an object file
-Command.cpp.obj:
-	$(MAKE) -f CMakeFiles\EX3.dir\build.make CMakeFiles/EX3.dir/Command.cpp.obj
-.PHONY : Command.cpp.obj
+Interpreter/BinaryOperator.cpp.obj:
+	$(MAKE) -f CMakeFiles\EX3.dir\build.make CMakeFiles/EX3.dir/Interpreter/BinaryOperator.cpp.obj
+.PHONY : Interpreter/BinaryOperator.cpp.obj
 
-Command.i: Command.cpp.i
+Interpreter/BinaryOperator.i: Interpreter/BinaryOperator.cpp.i
 
-.PHONY : Command.i
+.PHONY : Interpreter/BinaryOperator.i
 
 # target to preprocess a source file
-Command.cpp.i:
-	$(MAKE) -f CMakeFiles\EX3.dir\build.make CMakeFiles/EX3.dir/Command.cpp.i
-.PHONY : Command.cpp.i
+Interpreter/BinaryOperator.cpp.i:
+	$(MAKE) -f CMakeFiles\EX3.dir\build.make CMakeFiles/EX3.dir/Interpreter/BinaryOperator.cpp.i
+.PHONY : Interpreter/BinaryOperator.cpp.i
 
-Command.s: Command.cpp.s
+Interpreter/BinaryOperator.s: Interpreter/BinaryOperator.cpp.s
 
-.PHONY : Command.s
+.PHONY : Interpreter/BinaryOperator.s
 
 # target to generate assembly for a file
-Command.cpp.s:
-	$(MAKE) -f CMakeFiles\EX3.dir\build.make CMakeFiles/EX3.dir/Command.cpp.s
-.PHONY : Command.cpp.s
+Interpreter/BinaryOperator.cpp.s:
+	$(MAKE) -f CMakeFiles\EX3.dir\build.make CMakeFiles/EX3.dir/Interpreter/BinaryOperator.cpp.s
+.PHONY : Interpreter/BinaryOperator.cpp.s
+
+Interpreter/Div.obj: Interpreter/Div.cpp.obj
+
+.PHONY : Interpreter/Div.obj
+
+# target to build an object file
+Interpreter/Div.cpp.obj:
+	$(MAKE) -f CMakeFiles\EX3.dir\build.make CMakeFiles/EX3.dir/Interpreter/Div.cpp.obj
+.PHONY : Interpreter/Div.cpp.obj
+
+Interpreter/Div.i: Interpreter/Div.cpp.i
+
+.PHONY : Interpreter/Div.i
+
+# target to preprocess a source file
+Interpreter/Div.cpp.i:
+	$(MAKE) -f CMakeFiles\EX3.dir\build.make CMakeFiles/EX3.dir/Interpreter/Div.cpp.i
+.PHONY : Interpreter/Div.cpp.i
+
+Interpreter/Div.s: Interpreter/Div.cpp.s
+
+.PHONY : Interpreter/Div.s
+
+# target to generate assembly for a file
+Interpreter/Div.cpp.s:
+	$(MAKE) -f CMakeFiles\EX3.dir\build.make CMakeFiles/EX3.dir/Interpreter/Div.cpp.s
+.PHONY : Interpreter/Div.cpp.s
+
+Interpreter/Expression.obj: Interpreter/Expression.cpp.obj
+
+.PHONY : Interpreter/Expression.obj
+
+# target to build an object file
+Interpreter/Expression.cpp.obj:
+	$(MAKE) -f CMakeFiles\EX3.dir\build.make CMakeFiles/EX3.dir/Interpreter/Expression.cpp.obj
+.PHONY : Interpreter/Expression.cpp.obj
+
+Interpreter/Expression.i: Interpreter/Expression.cpp.i
+
+.PHONY : Interpreter/Expression.i
+
+# target to preprocess a source file
+Interpreter/Expression.cpp.i:
+	$(MAKE) -f CMakeFiles\EX3.dir\build.make CMakeFiles/EX3.dir/Interpreter/Expression.cpp.i
+.PHONY : Interpreter/Expression.cpp.i
+
+Interpreter/Expression.s: Interpreter/Expression.cpp.s
+
+.PHONY : Interpreter/Expression.s
+
+# target to generate assembly for a file
+Interpreter/Expression.cpp.s:
+	$(MAKE) -f CMakeFiles\EX3.dir\build.make CMakeFiles/EX3.dir/Interpreter/Expression.cpp.s
+.PHONY : Interpreter/Expression.cpp.s
+
+Interpreter/Interpreter.obj: Interpreter/Interpreter.cpp.obj
+
+.PHONY : Interpreter/Interpreter.obj
+
+# target to build an object file
+Interpreter/Interpreter.cpp.obj:
+	$(MAKE) -f CMakeFiles\EX3.dir\build.make CMakeFiles/EX3.dir/Interpreter/Interpreter.cpp.obj
+.PHONY : Interpreter/Interpreter.cpp.obj
+
+Interpreter/Interpreter.i: Interpreter/Interpreter.cpp.i
+
+.PHONY : Interpreter/Interpreter.i
+
+# target to preprocess a source file
+Interpreter/Interpreter.cpp.i:
+	$(MAKE) -f CMakeFiles\EX3.dir\build.make CMakeFiles/EX3.dir/Interpreter/Interpreter.cpp.i
+.PHONY : Interpreter/Interpreter.cpp.i
+
+Interpreter/Interpreter.s: Interpreter/Interpreter.cpp.s
+
+.PHONY : Interpreter/Interpreter.s
+
+# target to generate assembly for a file
+Interpreter/Interpreter.cpp.s:
+	$(MAKE) -f CMakeFiles\EX3.dir\build.make CMakeFiles/EX3.dir/Interpreter/Interpreter.cpp.s
+.PHONY : Interpreter/Interpreter.cpp.s
+
+Interpreter/Minus.obj: Interpreter/Minus.cpp.obj
+
+.PHONY : Interpreter/Minus.obj
+
+# target to build an object file
+Interpreter/Minus.cpp.obj:
+	$(MAKE) -f CMakeFiles\EX3.dir\build.make CMakeFiles/EX3.dir/Interpreter/Minus.cpp.obj
+.PHONY : Interpreter/Minus.cpp.obj
+
+Interpreter/Minus.i: Interpreter/Minus.cpp.i
+
+.PHONY : Interpreter/Minus.i
+
+# target to preprocess a source file
+Interpreter/Minus.cpp.i:
+	$(MAKE) -f CMakeFiles\EX3.dir\build.make CMakeFiles/EX3.dir/Interpreter/Minus.cpp.i
+.PHONY : Interpreter/Minus.cpp.i
+
+Interpreter/Minus.s: Interpreter/Minus.cpp.s
+
+.PHONY : Interpreter/Minus.s
+
+# target to generate assembly for a file
+Interpreter/Minus.cpp.s:
+	$(MAKE) -f CMakeFiles\EX3.dir\build.make CMakeFiles/EX3.dir/Interpreter/Minus.cpp.s
+.PHONY : Interpreter/Minus.cpp.s
+
+Interpreter/Mul.obj: Interpreter/Mul.cpp.obj
+
+.PHONY : Interpreter/Mul.obj
+
+# target to build an object file
+Interpreter/Mul.cpp.obj:
+	$(MAKE) -f CMakeFiles\EX3.dir\build.make CMakeFiles/EX3.dir/Interpreter/Mul.cpp.obj
+.PHONY : Interpreter/Mul.cpp.obj
+
+Interpreter/Mul.i: Interpreter/Mul.cpp.i
+
+.PHONY : Interpreter/Mul.i
+
+# target to preprocess a source file
+Interpreter/Mul.cpp.i:
+	$(MAKE) -f CMakeFiles\EX3.dir\build.make CMakeFiles/EX3.dir/Interpreter/Mul.cpp.i
+.PHONY : Interpreter/Mul.cpp.i
+
+Interpreter/Mul.s: Interpreter/Mul.cpp.s
+
+.PHONY : Interpreter/Mul.s
+
+# target to generate assembly for a file
+Interpreter/Mul.cpp.s:
+	$(MAKE) -f CMakeFiles\EX3.dir\build.make CMakeFiles/EX3.dir/Interpreter/Mul.cpp.s
+.PHONY : Interpreter/Mul.cpp.s
+
+Interpreter/Plus.obj: Interpreter/Plus.cpp.obj
+
+.PHONY : Interpreter/Plus.obj
+
+# target to build an object file
+Interpreter/Plus.cpp.obj:
+	$(MAKE) -f CMakeFiles\EX3.dir\build.make CMakeFiles/EX3.dir/Interpreter/Plus.cpp.obj
+.PHONY : Interpreter/Plus.cpp.obj
+
+Interpreter/Plus.i: Interpreter/Plus.cpp.i
+
+.PHONY : Interpreter/Plus.i
+
+# target to preprocess a source file
+Interpreter/Plus.cpp.i:
+	$(MAKE) -f CMakeFiles\EX3.dir\build.make CMakeFiles/EX3.dir/Interpreter/Plus.cpp.i
+.PHONY : Interpreter/Plus.cpp.i
+
+Interpreter/Plus.s: Interpreter/Plus.cpp.s
+
+.PHONY : Interpreter/Plus.s
+
+# target to generate assembly for a file
+Interpreter/Plus.cpp.s:
+	$(MAKE) -f CMakeFiles\EX3.dir\build.make CMakeFiles/EX3.dir/Interpreter/Plus.cpp.s
+.PHONY : Interpreter/Plus.cpp.s
+
+Interpreter/UMinus.obj: Interpreter/UMinus.cpp.obj
+
+.PHONY : Interpreter/UMinus.obj
+
+# target to build an object file
+Interpreter/UMinus.cpp.obj:
+	$(MAKE) -f CMakeFiles\EX3.dir\build.make CMakeFiles/EX3.dir/Interpreter/UMinus.cpp.obj
+.PHONY : Interpreter/UMinus.cpp.obj
+
+Interpreter/UMinus.i: Interpreter/UMinus.cpp.i
+
+.PHONY : Interpreter/UMinus.i
+
+# target to preprocess a source file
+Interpreter/UMinus.cpp.i:
+	$(MAKE) -f CMakeFiles\EX3.dir\build.make CMakeFiles/EX3.dir/Interpreter/UMinus.cpp.i
+.PHONY : Interpreter/UMinus.cpp.i
+
+Interpreter/UMinus.s: Interpreter/UMinus.cpp.s
+
+.PHONY : Interpreter/UMinus.s
+
+# target to generate assembly for a file
+Interpreter/UMinus.cpp.s:
+	$(MAKE) -f CMakeFiles\EX3.dir\build.make CMakeFiles/EX3.dir/Interpreter/UMinus.cpp.s
+.PHONY : Interpreter/UMinus.cpp.s
+
+Interpreter/UPlus.obj: Interpreter/UPlus.cpp.obj
+
+.PHONY : Interpreter/UPlus.obj
+
+# target to build an object file
+Interpreter/UPlus.cpp.obj:
+	$(MAKE) -f CMakeFiles\EX3.dir\build.make CMakeFiles/EX3.dir/Interpreter/UPlus.cpp.obj
+.PHONY : Interpreter/UPlus.cpp.obj
+
+Interpreter/UPlus.i: Interpreter/UPlus.cpp.i
+
+.PHONY : Interpreter/UPlus.i
+
+# target to preprocess a source file
+Interpreter/UPlus.cpp.i:
+	$(MAKE) -f CMakeFiles\EX3.dir\build.make CMakeFiles/EX3.dir/Interpreter/UPlus.cpp.i
+.PHONY : Interpreter/UPlus.cpp.i
+
+Interpreter/UPlus.s: Interpreter/UPlus.cpp.s
+
+.PHONY : Interpreter/UPlus.s
+
+# target to generate assembly for a file
+Interpreter/UPlus.cpp.s:
+	$(MAKE) -f CMakeFiles\EX3.dir\build.make CMakeFiles/EX3.dir/Interpreter/UPlus.cpp.s
+.PHONY : Interpreter/UPlus.cpp.s
+
+Interpreter/UnaryOperator.obj: Interpreter/UnaryOperator.cpp.obj
+
+.PHONY : Interpreter/UnaryOperator.obj
+
+# target to build an object file
+Interpreter/UnaryOperator.cpp.obj:
+	$(MAKE) -f CMakeFiles\EX3.dir\build.make CMakeFiles/EX3.dir/Interpreter/UnaryOperator.cpp.obj
+.PHONY : Interpreter/UnaryOperator.cpp.obj
+
+Interpreter/UnaryOperator.i: Interpreter/UnaryOperator.cpp.i
+
+.PHONY : Interpreter/UnaryOperator.i
+
+# target to preprocess a source file
+Interpreter/UnaryOperator.cpp.i:
+	$(MAKE) -f CMakeFiles\EX3.dir\build.make CMakeFiles/EX3.dir/Interpreter/UnaryOperator.cpp.i
+.PHONY : Interpreter/UnaryOperator.cpp.i
+
+Interpreter/UnaryOperator.s: Interpreter/UnaryOperator.cpp.s
+
+.PHONY : Interpreter/UnaryOperator.s
+
+# target to generate assembly for a file
+Interpreter/UnaryOperator.cpp.s:
+	$(MAKE) -f CMakeFiles\EX3.dir\build.make CMakeFiles/EX3.dir/Interpreter/UnaryOperator.cpp.s
+.PHONY : Interpreter/UnaryOperator.cpp.s
+
+Interpreter/Value.obj: Interpreter/Value.cpp.obj
+
+.PHONY : Interpreter/Value.obj
+
+# target to build an object file
+Interpreter/Value.cpp.obj:
+	$(MAKE) -f CMakeFiles\EX3.dir\build.make CMakeFiles/EX3.dir/Interpreter/Value.cpp.obj
+.PHONY : Interpreter/Value.cpp.obj
+
+Interpreter/Value.i: Interpreter/Value.cpp.i
+
+.PHONY : Interpreter/Value.i
+
+# target to preprocess a source file
+Interpreter/Value.cpp.i:
+	$(MAKE) -f CMakeFiles\EX3.dir\build.make CMakeFiles/EX3.dir/Interpreter/Value.cpp.i
+.PHONY : Interpreter/Value.cpp.i
+
+Interpreter/Value.s: Interpreter/Value.cpp.s
+
+.PHONY : Interpreter/Value.s
+
+# target to generate assembly for a file
+Interpreter/Value.cpp.s:
+	$(MAKE) -f CMakeFiles\EX3.dir\build.make CMakeFiles/EX3.dir/Interpreter/Value.cpp.s
+.PHONY : Interpreter/Value.cpp.s
+
+Interpreter/Variable.obj: Interpreter/Variable.cpp.obj
+
+.PHONY : Interpreter/Variable.obj
+
+# target to build an object file
+Interpreter/Variable.cpp.obj:
+	$(MAKE) -f CMakeFiles\EX3.dir\build.make CMakeFiles/EX3.dir/Interpreter/Variable.cpp.obj
+.PHONY : Interpreter/Variable.cpp.obj
+
+Interpreter/Variable.i: Interpreter/Variable.cpp.i
+
+.PHONY : Interpreter/Variable.i
+
+# target to preprocess a source file
+Interpreter/Variable.cpp.i:
+	$(MAKE) -f CMakeFiles\EX3.dir\build.make CMakeFiles/EX3.dir/Interpreter/Variable.cpp.i
+.PHONY : Interpreter/Variable.cpp.i
+
+Interpreter/Variable.s: Interpreter/Variable.cpp.s
+
+.PHONY : Interpreter/Variable.s
+
+# target to generate assembly for a file
+Interpreter/Variable.cpp.s:
+	$(MAKE) -f CMakeFiles\EX3.dir\build.make CMakeFiles/EX3.dir/Interpreter/Variable.cpp.s
+.PHONY : Interpreter/Variable.cpp.s
+
+Lexer.obj: Lexer.cpp.obj
+
+.PHONY : Lexer.obj
+
+# target to build an object file
+Lexer.cpp.obj:
+	$(MAKE) -f CMakeFiles\EX3.dir\build.make CMakeFiles/EX3.dir/Lexer.cpp.obj
+.PHONY : Lexer.cpp.obj
+
+Lexer.i: Lexer.cpp.i
+
+.PHONY : Lexer.i
+
+# target to preprocess a source file
+Lexer.cpp.i:
+	$(MAKE) -f CMakeFiles\EX3.dir\build.make CMakeFiles/EX3.dir/Lexer.cpp.i
+.PHONY : Lexer.cpp.i
+
+Lexer.s: Lexer.cpp.s
+
+.PHONY : Lexer.s
+
+# target to generate assembly for a file
+Lexer.cpp.s:
+	$(MAKE) -f CMakeFiles\EX3.dir\build.make CMakeFiles/EX3.dir/Lexer.cpp.s
+.PHONY : Lexer.cpp.s
 
 main.obj: main.cpp.obj
 
@@ -176,33 +500,6 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles\EX3.dir\build.make CMakeFiles/EX3.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-openServerCommand.obj: openServerCommand.cpp.obj
-
-.PHONY : openServerCommand.obj
-
-# target to build an object file
-openServerCommand.cpp.obj:
-	$(MAKE) -f CMakeFiles\EX3.dir\build.make CMakeFiles/EX3.dir/openServerCommand.cpp.obj
-.PHONY : openServerCommand.cpp.obj
-
-openServerCommand.i: openServerCommand.cpp.i
-
-.PHONY : openServerCommand.i
-
-# target to preprocess a source file
-openServerCommand.cpp.i:
-	$(MAKE) -f CMakeFiles\EX3.dir\build.make CMakeFiles/EX3.dir/openServerCommand.cpp.i
-.PHONY : openServerCommand.cpp.i
-
-openServerCommand.s: openServerCommand.cpp.s
-
-.PHONY : openServerCommand.s
-
-# target to generate assembly for a file
-openServerCommand.cpp.s:
-	$(MAKE) -f CMakeFiles\EX3.dir\build.make CMakeFiles/EX3.dir/openServerCommand.cpp.s
-.PHONY : openServerCommand.cpp.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -212,15 +509,48 @@ help:
 	@echo ... EX3
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... Command.obj
-	@echo ... Command.i
-	@echo ... Command.s
+	@echo ... Interpreter/BinaryOperator.obj
+	@echo ... Interpreter/BinaryOperator.i
+	@echo ... Interpreter/BinaryOperator.s
+	@echo ... Interpreter/Div.obj
+	@echo ... Interpreter/Div.i
+	@echo ... Interpreter/Div.s
+	@echo ... Interpreter/Expression.obj
+	@echo ... Interpreter/Expression.i
+	@echo ... Interpreter/Expression.s
+	@echo ... Interpreter/Interpreter.obj
+	@echo ... Interpreter/Interpreter.i
+	@echo ... Interpreter/Interpreter.s
+	@echo ... Interpreter/Minus.obj
+	@echo ... Interpreter/Minus.i
+	@echo ... Interpreter/Minus.s
+	@echo ... Interpreter/Mul.obj
+	@echo ... Interpreter/Mul.i
+	@echo ... Interpreter/Mul.s
+	@echo ... Interpreter/Plus.obj
+	@echo ... Interpreter/Plus.i
+	@echo ... Interpreter/Plus.s
+	@echo ... Interpreter/UMinus.obj
+	@echo ... Interpreter/UMinus.i
+	@echo ... Interpreter/UMinus.s
+	@echo ... Interpreter/UPlus.obj
+	@echo ... Interpreter/UPlus.i
+	@echo ... Interpreter/UPlus.s
+	@echo ... Interpreter/UnaryOperator.obj
+	@echo ... Interpreter/UnaryOperator.i
+	@echo ... Interpreter/UnaryOperator.s
+	@echo ... Interpreter/Value.obj
+	@echo ... Interpreter/Value.i
+	@echo ... Interpreter/Value.s
+	@echo ... Interpreter/Variable.obj
+	@echo ... Interpreter/Variable.i
+	@echo ... Interpreter/Variable.s
+	@echo ... Lexer.obj
+	@echo ... Lexer.i
+	@echo ... Lexer.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
-	@echo ... openServerCommand.obj
-	@echo ... openServerCommand.i
-	@echo ... openServerCommand.s
 .PHONY : help
 
 

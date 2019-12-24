@@ -22,6 +22,8 @@
 #include "ConnectCommand.h"
 #include "OpenServerCommand.h"
 #include "Lexer.h"
+#include "Interpreter/Expression.h"
+#include "Interpreter/Interpreter.h"
 
 using namespace std;
 
@@ -55,6 +57,7 @@ public:
 
 private:
     vector<string> cuttingArgumentsInConnect(string line);
+    vector<string> getVariables(string line);
 };
 
 

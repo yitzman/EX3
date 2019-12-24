@@ -9,9 +9,9 @@ using namespace std;
 #include <string>
 #include <iostream>
 #include <unistd.h>
-#include <sys/socket.h>
-#include <netinet/in.h>
-#include <arpa/inet.h>
+//#include <sys/socket.h>
+//#include <netinet/in.h>
+//#include <arpa/inet.h>
 
 class Command {
     virtual int execute() = 0;

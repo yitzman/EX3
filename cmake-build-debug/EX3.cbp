@@ -82,19 +82,91 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/user/Documents/GitHub/EX3/Command.cpp">
+		<Unit filename="C:/Users/user/Documents/GitHub/EX3/Interpreter">
 			<Option target="EX3"/>
 		</Unit>
-		<Unit filename="C:/Users/user/Documents/GitHub/EX3/Command.h">
+		<Unit filename="C:/Users/user/Documents/GitHub/EX3/Interpreter/BinaryOperator.cpp">
+			<Option target="EX3"/>
+		</Unit>
+		<Unit filename="C:/Users/user/Documents/GitHub/EX3/Interpreter/BinaryOperator.h">
+			<Option target="EX3"/>
+		</Unit>
+		<Unit filename="C:/Users/user/Documents/GitHub/EX3/Interpreter/Div.cpp">
+			<Option target="EX3"/>
+		</Unit>
+		<Unit filename="C:/Users/user/Documents/GitHub/EX3/Interpreter/Div.h">
+			<Option target="EX3"/>
+		</Unit>
+		<Unit filename="C:/Users/user/Documents/GitHub/EX3/Interpreter/Expression.cpp">
+			<Option target="EX3"/>
+		</Unit>
+		<Unit filename="C:/Users/user/Documents/GitHub/EX3/Interpreter/Expression.h">
+			<Option target="EX3"/>
+		</Unit>
+		<Unit filename="C:/Users/user/Documents/GitHub/EX3/Interpreter/Interpreter.cpp">
+			<Option target="EX3"/>
+		</Unit>
+		<Unit filename="C:/Users/user/Documents/GitHub/EX3/Interpreter/Interpreter.h">
+			<Option target="EX3"/>
+		</Unit>
+		<Unit filename="C:/Users/user/Documents/GitHub/EX3/Interpreter/Minus.cpp">
+			<Option target="EX3"/>
+		</Unit>
+		<Unit filename="C:/Users/user/Documents/GitHub/EX3/Interpreter/Minus.h">
+			<Option target="EX3"/>
+		</Unit>
+		<Unit filename="C:/Users/user/Documents/GitHub/EX3/Interpreter/Mul.cpp">
+			<Option target="EX3"/>
+		</Unit>
+		<Unit filename="C:/Users/user/Documents/GitHub/EX3/Interpreter/Mul.h">
+			<Option target="EX3"/>
+		</Unit>
+		<Unit filename="C:/Users/user/Documents/GitHub/EX3/Interpreter/Plus.cpp">
+			<Option target="EX3"/>
+		</Unit>
+		<Unit filename="C:/Users/user/Documents/GitHub/EX3/Interpreter/Plus.h">
+			<Option target="EX3"/>
+		</Unit>
+		<Unit filename="C:/Users/user/Documents/GitHub/EX3/Interpreter/UMinus.cpp">
+			<Option target="EX3"/>
+		</Unit>
+		<Unit filename="C:/Users/user/Documents/GitHub/EX3/Interpreter/UMinus.h">
+			<Option target="EX3"/>
+		</Unit>
+		<Unit filename="C:/Users/user/Documents/GitHub/EX3/Interpreter/UPlus.cpp">
+			<Option target="EX3"/>
+		</Unit>
+		<Unit filename="C:/Users/user/Documents/GitHub/EX3/Interpreter/UPlus.h">
+			<Option target="EX3"/>
+		</Unit>
+		<Unit filename="C:/Users/user/Documents/GitHub/EX3/Interpreter/UnaryOperator.cpp">
+			<Option target="EX3"/>
+		</Unit>
+		<Unit filename="C:/Users/user/Documents/GitHub/EX3/Interpreter/UnaryOperator.h">
+			<Option target="EX3"/>
+		</Unit>
+		<Unit filename="C:/Users/user/Documents/GitHub/EX3/Interpreter/Value.cpp">
+			<Option target="EX3"/>
+		</Unit>
+		<Unit filename="C:/Users/user/Documents/GitHub/EX3/Interpreter/Value.h">
+			<Option target="EX3"/>
+		</Unit>
+		<Unit filename="C:/Users/user/Documents/GitHub/EX3/Interpreter/Variable.cpp">
+			<Option target="EX3"/>
+		</Unit>
+		<Unit filename="C:/Users/user/Documents/GitHub/EX3/Interpreter/Variable.h">
+			<Option target="EX3"/>
+		</Unit>
+		<Unit filename="C:/Users/user/Documents/GitHub/EX3/Lexer.cpp">
+			<Option target="EX3"/>
+		</Unit>
+		<Unit filename="C:/Users/user/Documents/GitHub/EX3/Lexer.h">
 			<Option target="EX3"/>
 		</Unit>
 		<Unit filename="C:/Users/user/Documents/GitHub/EX3/main.cpp">
 			<Option target="EX3"/>
 		</Unit>
-		<Unit filename="C:/Users/user/Documents/GitHub/EX3/openServerCommand.cpp">
-			<Option target="EX3"/>
-		</Unit>
-		<Unit filename="C:/Users/user/Documents/GitHub/EX3/openServerCommand.h">
+		<Unit filename="C:/Users/user/Documents/GitHub/EX3/tester5">
 			<Option target="EX3"/>
 		</Unit>
 		<Unit filename="C:/Users/user/Documents/GitHub/EX3/CMakeLists.txt">
