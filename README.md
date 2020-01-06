@@ -12,3 +12,6 @@ Yitzi Jacobs 333991271, Avi Fraind 311519441
          iii) close the client socket and free all dynamically allocated memory.
 ### Program's Capabilities
    First, we connect to a server in order to have dialogue with the flight simulator. We then save certain variable names in a map data structure linking them to strings representing commands that FlightGear Understands. The program is then capable of referring to those variables and getting or changing any data linked to them. Simple tasks such as Print ,which can print a variable's value, and Sleep, which pauses certain threads, are supported by the program. We can then also read mimicked "while", "if" and function scopes and seamlessly perform the appropriate tasks written in the text file. The program is also capable of interpreting arithmetic expressions using Dijkstra’s Shunting Yard Algorithm.
+
+### GitHub Project Link
+        https://github.com/yitzman/EX3
